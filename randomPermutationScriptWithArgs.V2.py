@@ -20,8 +20,8 @@ def suffleRegions(chromosome,start,end,chromSizes):
 		indexOfChromosomes = np.where(chromosome == chrom)
 		chromStart = start[indexOfChromosomes]
 		chromEnd = end[indexOfChromosomes]
-		randomNumbers = [] 
-		randomBinaries = []
+		randomNumbers = [] #For plotting if needed; to see randomness of numbers generated
+		
 		listofGenomicLocations = []
 		for index in range(len(chromosome[indexOfChromosomes])):
 			randomNumber=random.randint(0,(chromSizes[chrom])/2)
