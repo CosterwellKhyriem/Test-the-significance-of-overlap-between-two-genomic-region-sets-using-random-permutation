@@ -1,4 +1,4 @@
-#! /usr/bin/python:wq
+#! /usr/bin/python
 
 import pybedtools as py
 import sys 
