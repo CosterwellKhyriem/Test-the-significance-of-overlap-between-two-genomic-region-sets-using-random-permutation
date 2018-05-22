@@ -1,0 +1,7 @@
+chrV	20924149	/gbdb/ce10/ce10.2bit
+chrX	17718866	/gbdb/ce10/ce10.2bit
+chrIV	17493793	/gbdb/ce10/ce10.2bit
+chrII	15279345	/gbdb/ce10/ce10.2bit
+chrI	15072423	/gbdb/ce10/ce10.2bit
+chrIII	13783700	/gbdb/ce10/ce10.2bit
+chrM	13794	/gbdb/ce10/ce10.2bit
