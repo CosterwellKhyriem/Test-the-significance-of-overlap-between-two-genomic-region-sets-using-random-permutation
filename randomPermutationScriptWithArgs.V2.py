@@ -5,8 +5,8 @@ import sys
 import numpy as np
 from scipy import stats
 import argparse
-import matplotlib
-matplotlib.use('Agg')
+#import matplotlib #for windows system   
+#matplotlib.use('Agg') #for windows system
 import matplotlib.pyplot as plt
 import random
 
