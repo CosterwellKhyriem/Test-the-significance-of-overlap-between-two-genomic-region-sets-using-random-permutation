@@ -66,7 +66,7 @@ listOflocation = []
 listForZscore = []
 
 observedOVerlap=bedFileA.intersect(bedFileB, u=True).count()
-normalizedOverlap=observedOVerlap*((totallengthOfRegionsBedA-effectiveGenomeSize)/(totallengthOfRegionsBedB-effectiveGenomeSize))
+normalizedOverlap=observedOVerlap*((totallengthOfRegionsBedA/effectiveGenomeSize)/(totallengthOfRegionsBedB/effectiveGenomeSize))
 
 listForZscore.append(normalizedOverlap)
 
@@ -75,7 +75,7 @@ print "Make "+str(information.num_of_iterations)+" iterations"
 for shuffle in range(0,int(information.num_of_iterations)):
 	randomShuffledRegions=bedFileA.shuffle(genome=information.genome,chrom=True)
 	permOverlap=randomShuffledRegions.intersect(bedFileB, u=True).count()
-	normalizedPermOverlap=permOverlap*((totallengthOfRegionsBedA-effectiveGenomeSize)/(totallengthOfRegionsBedB-effectiveGenomeSize))
+	normalizedPermOverlap=permOverlap*((totallengthOfRegionsBedA/effectiveGenomeSize)/(totallengthOfRegionsBedB/effectiveGenomeSize))
 	listForZscore.append(normalizedPermOverlap)
 
 print "Iterations complete"
